@@ -78,6 +78,13 @@ All models were trained for 5 epochs using Adam optimizer ($\eta = 10^{-3}$, $\b
 - **MLP and CNN:** Hand-calculated arithmetic operations matched `thop.profile` with **0.00% error**, validating that $1\text{ MAC} = 2\text{ FLOPs}$ for standard convolutions and dense GEMMs.
 - **Attention Model ($49.23\%$ Gap):** `thop` reported 1.183 MFLOPs while analytical derivation yielded 2.330 MFLOPs. This discrepancy arises because `thop` hooks standard PyTorch `nn.Linear` layers within the multihead attention module, but fails to trace the non-module tensor contractions: specifically, the batched matrix multiplications for attention score computation ($Q K^T$) and context weighting ($A V$), which contribute $4 \times \text{seq}^2 \times d_{\text{model}} = 65,536\text{ FLOPs}$ per layer, as well as Softmax and LayerNorm operations. Profiling tools that rely exclusively on module hooks systematically under-count Transformer computational intensity.
 
+### 3.3 Handwritten Calculations Evidence
+Photographic documentation of the step-by-step hand calculations for parameter counts and representative FLOPs across all three models:
+
+| Page 1: MLP & CNN Parameters/FLOPs | Page 2: CNN FLOPs & Attention Parameters | Page 3: Attention FLOPs Derivation |
+|:---:|:---:|:---:|
+| <img src="results/hand_calculations_p1.jpg" width="260"/> | <img src="results/hand_calculations_p2.jpg" width="260"/> | <img src="results/hand_calculations_p3.jpg" width="260"/> |
+
 ---
 
 ## 4. Three Conclusions in Your Own Words
