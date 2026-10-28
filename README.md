@@ -60,6 +60,6 @@ pip install -r requirements.txt
 | Lab | Topic | Dataset | Status |
 |:---:|:---|:---|:---:|
 | **Lab 01** | Environment and First System Measurements | Breast Cancer Wisconsin (Diagnostic) | **Completed** |
-| **Lab 02** | A Neural Network from Scratch (2 Hidden Layers) | Optical Recognition of Handwritten Digits | Ready |
+| **Lab 02** | A Neural Network from Scratch (2 Hidden Layers) | Optical Recognition of Handwritten Digits | **Completed** |
 | **Lab 03–10** | Deep Learning, Optimization, Systems & Robustness | Fashion-MNIST, UCI Adult, Two Moons | Upcoming |
 | **Project** | End-to-end Machine Learning Systems Engineering | Fashion-MNIST / Approved Dataset | Upcoming |
