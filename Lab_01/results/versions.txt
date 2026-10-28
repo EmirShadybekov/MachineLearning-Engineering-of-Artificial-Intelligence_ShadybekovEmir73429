@@ -1,0 +1,38 @@
+============================================================
+MACHINE LEARNING ENVIRONMENT SPECIFICATION
+Course: Machine Learning [CII5SE039CI] - Vistula University
+Student: Emir Shadybekov (Album: 73429)
+============================================================
+Python Version: 3.13.5 (64bit)
+Python Executable: C:\Users\Emir\AppData\Local\Programs\Python\Python313\python.exe
+Operating System: Windows 11 (10.0.22000)
+Machine / Processor: AMD64 - Intel64 Family 6 Model 186 Stepping 2, GenuineIntel
+------------------------------------------------------------
+PINNED REQUIREMENTS STATUS:
+------------------------------------------------------------
+numpy               : 2.5.4
+pandas              : 3.1.0
+scikit-learn        : 1.9.1
+scipy               : 1.18.1
+matplotlib          : 3.11.2
+seaborn             : Not installed in current environment
+torch               : Not installed in current environment
+torchvision         : Not installed in current environment
+torchinfo           : Not installed in current environment
+thop                : Not installed in current environment
+onnx                : Not installed in current environment
+onnxruntime         : Not installed in current environment
+mlflow              : Not installed in current environment
+memory-profiler     : Not installed in current environment
+psutil              : 7.2.2
+codecarbon          : Not installed in current environment
+fastapi             : Not installed in current environment
+uvicorn             : Not installed in current environment
+pytest              : Not installed in current environment
+httpx               : Not installed in current environment
+locust              : Not installed in current environment
+requests            : Not installed in current environment
+pyarrow             : Not installed in current environment
+joblib              : 1.6.0
+tqdm                : Not installed in current environment
+============================================================
