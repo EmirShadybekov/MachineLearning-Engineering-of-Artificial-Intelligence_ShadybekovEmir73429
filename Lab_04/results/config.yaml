@@ -1,0 +1,44 @@
+pipeline_metadata:
+  project: UCI Adult Data Pipeline and Quality
+  course: Machine Learning [CII5SE039CI], Group 03
+  author: 'Emir Shadybekov (Album: 73429)'
+  institution: Vistula University
+dataset:
+  source: UCI Adult (OpenML name=adult, version=2)
+  raw_shape:
+  - 48842
+  - 15
+  train_test_split:
+    test_size: 0.3
+    stratified: true
+    random_state: 42
+validation_schema:
+  age_range:
+  - 17
+  - 90
+  hours_range:
+  - 1
+  - 99
+  capital_gain_range:
+  - 0
+  - 99999
+  capital_loss_range:
+  - 0
+  - 4356
+  null_representation: '?'
+transformations:
+  numeric_imputation: median
+  categorical_imputation: mode
+  outlier_clipping: 1st and 99th percentiles (train-fitted)
+  train_deduplication: exact duplicates dropped from train only
+  engineered_features:
+  - capital_net = capital-gain - capital-loss
+  - hours_per_age = hours-per-week / (age - 16)
+  categorical_encoding: OneHotEncoder(handle_unknown=ignore)
+  numeric_scaling: StandardScaler
+artifacts:
+  processed_data_shape:
+  - 34165
+  - 107
+  sha256_hash: c2eceb3535a5efb4f2628934b40480f5e48097fef271bd4d45eec084fb6eceb5
+  preprocessor_file: results/preprocessor.joblib

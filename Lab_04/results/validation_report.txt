@@ -1,0 +1,39 @@
+======================================================================
+UCI ADULT DATASET VALIDATION REPORT
+Course: Machine Learning [CII5SE039CI] - Vistula University
+Total Rows: 48842, Total Columns: 15
+======================================================================
+
+1. SCHEMA & TYPE VALIDATION:
+  - age               : Expected int      | Actual int64           [OK]
+  - workclass         : Expected category | Actual category        [OK]
+  - fnlwgt            : Expected int      | Actual int64           [OK]
+  - education         : Expected category | Actual category        [OK]
+  - education-num     : Expected int      | Actual int64           [OK]
+  - marital-status    : Expected category | Actual category        [OK]
+  - occupation        : Expected category | Actual category        [OK]
+  - relationship      : Expected category | Actual category        [OK]
+  - race              : Expected category | Actual category        [OK]
+  - sex               : Expected category | Actual category        [OK]
+  - capital-gain      : Expected int      | Actual int64           [OK]
+  - capital-loss      : Expected int      | Actual int64           [OK]
+  - hours-per-week    : Expected int      | Actual int64           [OK]
+  - native-country    : Expected category | Actual category        [OK]
+  - income            : Expected category | Actual category        [OK]
+
+2. VALUE RANGE CHECKS:
+  - age               : Allowed [17, 90] | Observed [17, 90] | Violations: 0
+  - hours-per-week    : Allowed [1, 99] | Observed [1, 99] | Violations: 0
+  - capital-gain      : Allowed [0, 99999] | Observed [0, 99999] | Violations: 0
+  - capital-loss      : Allowed [0, 4356] | Observed [0, 4356] | Violations: 0
+
+3. MISSING VALUE AUDIT (Null policy: '?' means missing):
+  - workclass         : NaN=2799  | '?'=0     | Total Missing=2799  (5.73%)
+  - occupation        : NaN=2809  | '?'=0     | Total Missing=2809  (5.75%)
+  - native-country    : NaN=857   | '?'=0     | Total Missing=857   (1.75%)
+
+4. CONCLUSION:
+  Validation executed strictly without silently dropping any rows.
+  Detected missing values in 'workclass', 'occupation', and 'native-country'.
+  Range bounds verified against domain constraints.
+======================================================================
