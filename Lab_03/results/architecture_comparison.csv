@@ -1,0 +1,4 @@
+Model,Parameters,Representative Layer,Rep Layer FLOPs,Hand FLOPs,thop MACs,thop FLOPs,FLOPs Gap (%),Latency B1 (ms),Latency B128 (ms),Test Accuracy (%)
+MLP,235146,"Linear(784, 256)",401408,469504,234752,469504,0.0,0.064,0.4074,87.75
+CNN,20490,"Conv2d(1, 16, 3x3, H=28, W=28)",225792,2063488,1031744,2063488,0.0,0.1761,11.0645,89.69
+Attention,71818,"QKV Projections (seq=16, d=64)",393216,2329856,591488,1182976,49.23,0.711,5.7733,85.21
