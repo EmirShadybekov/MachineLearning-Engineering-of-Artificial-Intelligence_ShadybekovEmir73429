@@ -1,0 +1,3 @@
+Tensor Layout,is_contiguous(),Operation,Median Latency (ms),Relative Speed
+"Contiguous (Row-major, stride=(2048, 1))",True,sum(dim=1),0.2961,1.00x (Baseline)
+"Non-Contiguous (Transposed, stride=(1, 2048))",False,sum(dim=1),1.0133,3.42x slower

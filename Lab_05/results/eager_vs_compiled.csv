@@ -1,0 +1,4 @@
+Execution Mode,Median Latency (ms),Speedup vs Eager
+PyTorch Eager,0.0223,1.00x (Baseline)
+TorchScript (JIT Trace),0.0172,1.30x
+TorchScript (JIT Script),0.0163,1.36x

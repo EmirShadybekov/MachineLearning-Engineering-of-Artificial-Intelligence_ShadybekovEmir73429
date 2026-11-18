@@ -63,5 +63,6 @@ pip install -r requirements.txt
 | **Lab 02** | A Neural Network from Scratch (2 Hidden Layers) | Optical Recognition of Handwritten Digits | **Completed** |
 | **Lab 03** | Architectures and Their Costs (MLP, CNN, Attention) | Fashion-MNIST | **Completed** |
 | **Lab 04** | Data Pipeline and Quality (Leakage-Free, Validation, Data Card) | UCI Adult (Census Income) | **Completed** |
-| **Lab 05–11** | Optimization, Deep Learning, Robustness & Fairness | Two Moons, Fashion-MNIST, UCI Adult | Upcoming |
+| **Lab 05** | Frameworks and Automatic Differentiation (Autograd Engine, make_moons, Contiguity) | Two Moons (`make_moons`) | **Completed** |
+| **Lab 06–11** | Optimization, Deep Learning, Robustness & Fairness | Fashion-MNIST, UCI Adult, Two Moons | Upcoming |
 | **Project** | End-to-end Machine Learning Systems Engineering | Fashion-MNIST / Approved Dataset | Upcoming |

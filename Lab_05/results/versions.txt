@@ -1,0 +1,21 @@
+============================================================
+MACHINE LEARNING LAB 5: ENVIRONMENT & LIBRARY VERSIONS
+Course: Machine Learning [CII5SE039CI], Group 03
+Student: Emir Shadybekov (Album: 73429)
+============================================================
+Python Version: 3.13.5 (64bit)
+Python Executable: C:\Users\Emir\AppData\Local\Programs\Python\Python313\python.exe
+Operating System: Windows 11 (10.0.22000)
+Machine Architecture: AMD64
+------------------------------------------------------------
+CORE PACKAGES FOR LAB 5:
+------------------------------------------------------------
+torch               : 2.15.0
+torchvision         : 0.29.2
+torchinfo           : 1.8.0
+thop                : 0.1.1-2209072238
+scikit-learn        : 1.9.1
+numpy               : 2.5.4
+pandas              : 3.1.0
+matplotlib          : 3.11.2
+============================================================

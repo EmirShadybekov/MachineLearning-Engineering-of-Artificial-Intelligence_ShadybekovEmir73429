@@ -1,0 +1,3 @@
+Framework,Architecture,Loss (BCE),Accuracy (%),Median Time (s),Runs,Relative Speed
+Custom Autograd (Value),2 -> 8 -> 1 (Sigmoid),0.2554,87.8,12.6157,5 runs (median),1.00x (Baseline)
+PyTorch (C++ Core),2 -> 8 -> 1 (Sigmoid),0.2557,87.8,0.1048,5 runs (median),120.43x faster
